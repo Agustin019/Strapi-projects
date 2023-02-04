@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anteojoposts",
+  "info": {
+    "singularName": "anteojopost",
+    "pluralName": "anteojoposts",
+    "displayName": "anteojopost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contenido": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo"
+    }
+  }
+}
